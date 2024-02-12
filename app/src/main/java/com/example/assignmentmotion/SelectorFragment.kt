@@ -31,6 +31,8 @@ class SelectorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.apply {
+
+
             btnSignin.setOnClickListener {
                 navigateToLogin()
             }
