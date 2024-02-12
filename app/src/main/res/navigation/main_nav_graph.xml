@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.assignmentmotion.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_bnvActivity2"
+            app:destination="@id/bnvActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.assignmentmotion.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_selectorFragment"
+            app:destination="@id/selectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.assignmentmotion.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_bnvActivity2"
+            app:destination="@id/bnvActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectorFragment"
+        android:name="com.example.assignmentmotion.SelectorFragment"
+        android:label="fragment_selector"
+        tools:layout="@layout/fragment_selector" >
+        <action
+            android:id="@+id/action_selectorFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_selectorFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/bnvActivity"
+        android:name="com.example.assignmentmotion.bnv.BnvActivity"
+        android:label="activity_bnv"
+        tools:layout="@layout/activity_bnv" />
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer 1: Border -->
+    <item>
+        <shape android:shape="rectangle">
+
+            <!-- Border Width -->
+            <stroke
+                android:width="1dp"
+                android:color="#FFFFFF" />
+
+            <!-- Corner Radius -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Layer 2: Icon -->
+    <item android:drawable="@drawable/img_google"
+        android:gravity="center" />
+
+</layer-list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/it_home"
+        android:icon="@drawable/round_home_24"
+        android:title="@string/bnv_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/it_search"
+        android:icon="@drawable/round_search_24"
+        android:title="@string/bnv_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/it_heroes"
+        android:icon="@drawable/round_people_alt_24"
+        android:title="@string/bnv_heroes"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/it_watchlist"
+        android:icon="@drawable/baseline_bookmarks_24"
+        android:title="@string/bnv_watchlist"
+        app:showAsAction="ifRoom"/>
+</menu>
